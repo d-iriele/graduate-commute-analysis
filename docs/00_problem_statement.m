@@ -1,0 +1,2 @@
+### Methodology note on salary data
+Graduate salary is sourced at the regional level (LEO Graduate Outcomes, earnings by region), not city level, since no city-specific graduate salary dataset exists at this granularity. Each of the six cities is treated as the economic focal point of its region (e.g., Manchester → North West, Birmingham → West Midlands), meaning results should be read as a regional purchasing-power comparison anchored on major cities, rather than a claim about salaries specific to each named city alone.
