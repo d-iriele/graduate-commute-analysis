@@ -1,0 +1,7 @@
+city,local_authority,monthly_rent_1bed_gbp,annual_rent_gbp,source,date_collected
+London,Reading,1115.00,13380.00,ONS Private rent and house prices UK,2026-08-16
+Manchester,Stockport,802.00,9624.00,ONS Private rent and house prices UK,2026-08-16
+Birmingham,Sutton Coldfield,1234.00,14808.00,ONS Private rent and house prices UK,2026-08-16
+Bristol,Bath and North East Somerset,1205.00,14460.00,ONS Private rent and house prices UK,2026-08-16
+Leeds,York,886.00,10632.00,ONS Private rent and house prices UK,2026-08-16
+Edinburgh,Glasgow,843.00,10116.00,ONS Private rent and house prices UK,2026-08-16

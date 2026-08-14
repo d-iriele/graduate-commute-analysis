@@ -1,0 +1,7 @@
+city,origin_station,destination_station,annual_season_ticket_gbp,journey_time_minutes,route_type,source,date_collected
+London,Reading,London Travelcard Zones 1-6,6952.00,24,outer_suburb,National Rail Season Ticket Calculator,2026-08-15
+Manchester,Stockport,Manchester Piccadilly,1168.00,9,outer_suburb,National Rail Season Ticket Calculator,2026-08-15
+Birmingham,Sutton Coldfield,Birmingham New Street,1150.00,21,outer_suburb,National Rail Season Ticket Calculator,2026-08-15
+Bristol,Bath Spa,Bristol Temple Meads,2144.00,15,outer_suburb,National Rail Season Ticket Calculator,2026-08-15
+Leeds,York,Leeds,3028.00,23,outer_suburb,National Rail Season Ticket Calculator,2026-08-15
+Edinburgh,Glasgow Central,Edinburgh Waverley,3192.00,62,intercity,National Rail Season Ticket Calculator,2026-08-15
