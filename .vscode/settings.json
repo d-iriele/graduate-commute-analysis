@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "graduate-commute-db",
+            "database": "graduate_commute_db",
+            "username": "dennisiriele"
+        }
+    ]
+}
