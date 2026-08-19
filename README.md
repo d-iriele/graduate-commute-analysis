@@ -78,11 +78,17 @@ Then follow the steps in the [Data](#data) section to populate `data/raw/`, and 
 
 ## Findings
 
-_Coming soon._
+Comparing graduate salaries alone across six UK cities produces a misleading picture of financial outcome. London — the highest-salary city (£31,800) — falls to last place (6th) on total cost of work once rent, commuting cost, and the monetary value of commuting time are accounted for, while Leeds rises from lowest salary to 2nd place. Manchester emerges as the strongest all-round city, ranking only 3rd on salary but 1st on total cost of work.
+
+Full findings, methodology, and limitations: [`docs/findings_summary.md`](docs/findings_summary.md)
 
 ## Dashboard
 
-_Coming soon._
+Explore the live, interactive dashboard on Tableau Public: **[The Cost of a Commute — Graduate Purchasing Power Across UK Cities](https://public.tableau.com/app/profile/dennis.iriele/viz/TheRealCostofaCommute-GraduatePurchasingPowerAcrossUKCities_/Dashboard1?publish=yes)**
+
+![Dashboard overview showing disposable income by city, a salary-rank-versus-total-cost-rank comparison, and commute cost/time burden by city](images/dashboard_screenshots/dashboard_overview.png)
+
+The dashboard includes an interactive filter — clicking any bar in the "Disposable Income" chart filters the other two charts to that city, letting you explore how salary rank, total cost rank, and the specific cost/time burden driving each city's position all move together.
 
 ## Key Recommendations
 
