@@ -48,37 +48,37 @@ SELECT * FROM city_analysis;
 -- into an hourly-equivalent wage for the time-cost calculation.
 -- ============================================================
 
+DROP TABLE IF EXISTS city_dashboard;
+DROP TABLE city_kpis;
+
 CREATE TABLE city_kpis AS
 SELECT
     city,
+    mapped_region,
+    local_authority,
     graduate_salary,
     annual_rent_gbp,
     annual_season_ticket_gbp,
     journey_time_minutes,
     route_type,
 
-    -- Disposable income: what's left after rent and commute cost
     graduate_salary - annual_rent_gbp - annual_season_ticket_gbp AS disposable_income_gbp,
 
-    -- Commute cost as a % of gross salary
     ROUND(
         100.0 * annual_season_ticket_gbp / graduate_salary,
         2
     ) AS commute_cost_pct_salary,
 
-    -- Annual commute hours: one-way minutes × 2 (round trip) × 253 days, converted to hours
     ROUND(
         (journey_time_minutes * 2 * 253) / 60.0,
         1
     ) AS annual_commute_hours,
 
-    -- Time cost: annual commute hours priced at the graduate's own hourly-equivalent wage
     ROUND(
         (journey_time_minutes * 2 * 253) / 60.0 * (graduate_salary / 1897.5),
         2
     ) AS time_cost_gbp,
 
-    -- Total cost of work: rent + commute cost + time cost combined
     ROUND(
         annual_rent_gbp + annual_season_ticket_gbp +
         ((journey_time_minutes * 2 * 253) / 60.0 * (graduate_salary / 1897.5)),
