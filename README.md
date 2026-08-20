@@ -26,48 +26,51 @@ Full problem statement and business objectives: [`docs/00_problem_statement.md`]
 5. How sensitive is the ranking to the choice of commute route?
 
 ## Tech Stack & Methodology
-
 | Tool | Role in this project |
 |---|---|
-| SQL (PostgreSQL) | Structuring bulk salary/rent data, calculating derived metrics (disposable income, time cost), and producing the final ranked comparison |
-| Python (pandas) | Validation of SQL calculations and any scraping/cleanup needed for manually sourced commute data |
-| Dashboard tool (tableau public) | Visual, ranked comparison across cities |
+| SQL (PostgreSQL) | Data structuring, city-region mapping, KPI calculations, and the final ranked comparison |
+| Tableau Public | Interactive, cross-filtered dashboard |
 
-Data flows through this pipeline: **bulk downloads (ONS/HESA) + manually curated commute data → SQL → Python validation → dashboard**. Unlike a project built entirely on one clean source file, this project deliberately combines two very different kinds of input — official bulk statistics and hand-curated, individually sourced figures — and documents that distinction explicitly (see Data section below).
+Given the project's small final dataset (six cities), all analysis was completed directly in SQL without a separate Python validation step — a deliberate scope decision consistent with also skipping a star schema in Milestone 5 (see `docs/01_data_dictionary.md`).
 
 ## Project Structure
 
 ```
 graduate-commute-analysis/
 ├── data/
-│   ├── raw/              # ONS/HESA bulk downloads (gitignored — see Data section)
-│   ├── processed/        # cleaned output from SQL stage (gitignored)
-│   ├── manual/           # commute cost/time table, sourced and documented per city (tracked)
-│   └── sample/           # small tracked sample of raw data, if applicable
-├── sql/                  # schema, cleaning, and analysis queries
-├── notebooks/            # exploratory validation notebooks
-├── dashboard/            # dashboard files
-├── docs/                 # problem statement, data dictionary, findings write-up
-└── images/               # dashboard screenshots for this README
+│   ├── raw/               # HESA/LEO salary data (small enough to commit directly)
+│   ├── manual/             # commute and rent data, sourced and documented per city (tracked)
+│  
+├── sql/
+│   ├── 01_schema.sql
+│   ├── 02_cleaning.sql
+│   ├── 03_analysis_queries.sql
+│   └── 04_bi_data_model.sql
+├── dashboard/              # Tableau workbook (.twbx)
+├── docs/
+│   ├── 00_problem_statement.md
+│   ├── 01_data_dictionary.md
+│   └── findings_summary.md
+└── images/
+    └── dashboard_screenshots/
 ```
 
 ## Data
 
 **Bulk sources:**
-- Graduate salary by region: [HESA Graduate Outcomes](#) / [ONS ASHE](#)
-- Rent by city (one-bedroom average): [ONS Private rent and house prices, UK](#)
+- Graduate salary by region: [LEO Graduate Outcomes — Earnings by Region](https://explore-education-statistics.service.gov.uk/data-catalogue/graduate-outcomes-leo-provider-level-data/2020-21)
+- Rent by city (one-bedroom average): [ONS Private rent and house prices, UK](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/july2026)
 
 **Manually curated source:**
-- Commute cost and time: one representative route per city, priced via the [National Rail Season Ticket Calculator](https://www.nationalrail.co.uk/tickets-railcards-and-offers/ticket-types/season-ticket-calculator/) on the date of collection. Full route list, prices, and collection dates documented in `data/manual/commute_data.csv` and `docs/01_data_dictionary.md`. Unlike the bulk sources above, this file is committed directly to the repo rather than gitignored, since it represents original curation rather than a large derived export.
+- Commute cost and time: one representative route per city, priced via the [National Rail Season Ticket Calculator](https://www.nationalrail.co.uk/tickets-railcards-and-offers/ticket-types/season-ticket-calculator/) on the date of collection. Full route list, prices, and collection dates documented in `data/manual/commute_data.csv` and `docs/01_data_dictionary.md`.
 
-The full raw bulk datasets are not committed to this repo (see `.gitignore`). To reproduce, download from the links above and place in `data/raw/`.
+The salary dataset is small enough to commit directly to this repo (`data/raw/`) rather than gitignored — see the Data section of `docs/01_data_dictionary.md` for the full column reference and methodology notes (region-to-city mapping, Scotland's differing data collection methods, and the Birmingham commute cost estimate).
 
 ## How to Run This Project
 
 ```bash
 git clone <https://github.com/d-iriele/graduate-commute-analysis>
 cd graduate-commute-analysis
-python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
