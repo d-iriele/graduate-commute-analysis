@@ -90,7 +90,7 @@ ORDER BY time_cost_rank;
 
 -- Finding (Question 3): Edinburgh's time cost (£8,294) is 2.4x higher than
 -- the next-highest city (London, £3,392) and over 7.5x higher than
--- Manchester's (£1,080) — a direct consequence of the intercity
+-- Manchester's (£1,080), a direct consequence of the intercity
 -- Glasgow-Edinburgh commute (62 minutes each way) rather than the suburban
 -- commute pattern used for the other five cities (see route_type flag and
 -- Milestone 0 methodology note). This is the single largest driver of

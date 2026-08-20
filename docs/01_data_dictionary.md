@@ -26,10 +26,10 @@ Data point: one-bedroom property average monthly rent, by local authority (or Br
 | monthly_rent_1bed_gbp | numeric | ONS one-bedroom average monthly rent |
 | annual_rent_gbp | numeric | monthly_rent_1bed_gbp × 12 — used directly in the Disposable Income KPI |
 
-**Methodology note — rent is measured at the commute origin, not the destination city.** Consistent with the commute cost data, rent reflects the local authority a graduate would realistically live in (e.g., Stockport for Manchester, Reading for London), not the city centre where they work. This keeps rent and commute cost internally consistent — both describe the same person's actual living location — rather than mixing a suburban commute cost with a city-centre rent figure, which would misrepresent a single graduate's real financial position.
+**Methodology note — rent is measured at the commute origin, not the destination city.** Consistent with the commute cost data, rent reflects the local authority a graduate would realistically live in (e.g., Stockport for Manchester, Reading for London), not the city centre where they work. This keeps rent and commute cost internally consistent so that both describe the same person's actual living location   rather than mixing a suburban commute cost with a city-centre rent figure, which would misrepresent a single graduate's real financial position.
 
-**Methodology note — Scotland caution.** ONS 
-explicitly advises caution when comparing Scotland's rent estimates (measured via Broad Rental Market Areas) against local-authority-level figures for England and Wales, due to differing data collection methods. This is the second dataset in this project (alongside the Edinburgh commute route) where Scotland required distinct methodological treatment — worth noting as a pattern in the findings write-up, not just a one-off caveat.
+**Methodology note — Scotland caution.** 
+ONS explicitly advises caution when comparing Scotland's rent estimates (measured via Broad Rental Market Areas) against local-authority-level figures for England and Wales, due to differing data collection methods. This is the second dataset in this project (alongside the Edinburgh commute route) where Scotland required distinct methodological treatment — worth noting as a pattern in the findings write-up, not just a one-off caveat.
 
 **Note on initial data collection error, corrected:** an earlier pull of this data was not filtered to one-bedroom properties and instead reflected all-property-size averages, which ran 27-29% higher across the sample checked. This was caught and corrected before use in any analysis — see commit history.
 

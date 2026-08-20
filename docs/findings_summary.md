@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-Comparing graduate salaries alone across six UK cities produces a misleading picture of financial outcome. Once rent, commuting cost, and the monetary value of commuting time are accounted for, London — the highest-salary city (£31,800) — falls to last place (6th) on total cost of work, while Leeds rises from lowest salary (£25,600) to 2nd place. Manchester emerges as the strongest all-round city, ranking only 3rd on salary but 1st on total cost of work, driven by consistently low rent, commute cost, and commute time. Edinburgh presents a distinct case: it offers the highest disposable income of any city, but its position weakens substantially once commuting time is priced in, due to an intercity (rather than suburban) commute pattern. The findings support a clear conclusion: a headline salary figure, used alone, systematically misrepresents where a graduate is financially better off.
+Comparing graduate salaries alone across six UK cities produces a misleading picture of financial outcome. Once rent, commuting cost, and the monetary value of commuting time are accounted for, London — the highest-salary city (£31,800) - falls to last place (6th) on total cost of work, while Leeds rises from lowest salary (£25,600) to 2nd place. Manchester emerges as the strongest all-round city, ranking only 3rd on salary but 1st on total cost of work, driven by consistently low rent, commute cost, and commute time. Edinburgh presents a distinct case: it offers the highest disposable income of any city, but its position weakens substantially once commuting time is priced in, due to an intercity (rather than suburban) commute pattern. The findings support a clear conclusion: a headline salary figure, used alone, systematically misrepresents where a graduate is financially better off.
 
 ## Business Context & Objective
 
@@ -11,10 +11,10 @@ Graduate job offers are typically compared on salary alone, but this ignores two
 ## Key Findings
 
 **1. Where does a graduate's salary go furthest once fixed costs are removed?**
-Edinburgh offers the highest disposable income (£16,792) despite ranking only 2nd on raw salary, narrowly ahead of Manchester (£16,208). London ranks 1st on salary (£31,800) but drops to 4th on disposable income (£11,468) — over £5,300 lower than Edinburgh — once rent and commute cost are removed. Bristol has the lowest disposable income of the six (£9,996), driven primarily by Bath's high rent (£14,460/year) rather than commute cost, which sits mid-range.
+Edinburgh offers the highest disposable income (£16,792) despite ranking only 2nd on raw salary, narrowly ahead of Manchester (£16,208). London ranks 1st on salary (£31,800) but drops to 4th on disposable income (£11,468) — over £5,300 lower than Edinburgh once rent and commute cost are removed. Bristol has the lowest disposable income of the six (£9,996), driven primarily by Bath's high rent (£14,460/year) rather than commute cost, which sits mid-range.
 
 **2. How much of a graduate's income is absorbed by commuting specifically?**
-London's commute cost consumes 21.86% of gross salary — nearly double the next-highest city (Leeds, 11.83%) — despite London also having the highest headline salary. Manchester (4.33%) and Birmingham (4.26%) sit at the opposite extreme, both under 5%, showing commute burden is not simply a function of city size, salary level, or distance travelled alone.
+London's commute cost consumes 21.86% of gross salary — nearly double the next-highest city (Leeds, 11.83%) despite London also having the highest headline salary. Manchester (4.33%) and Birmingham (4.26%) sit at the opposite extreme, both under 5%, showing commute burden is not simply a function of city size, salary level, or distance travelled alone.
 
 **3. What is the true time cost of commuting, priced at the graduate's own wage?**
 Edinburgh's time cost (£8,294) is 2.4x higher than the next-highest city (London, £3,392) and over 7.5x higher than Manchester's (£1,080) — a direct consequence of the intercity Glasgow–Edinburgh commute (62 minutes each way) rather than the suburban commute pattern used for the other five cities. This is the single largest driver of Edinburgh's fall from 1st place on disposable income to 5th on total cost of work.
@@ -22,25 +22,24 @@ Edinburgh's time cost (£8,294) is 2.4x higher than the next-highest city (Londo
 **4. Which cities reorder most dramatically once rent, commute cost, and time are all included?**
 London shows the most dramatic downward reordering — falling 5 full positions, from 1st on raw salary to last (6th) on total cost of work — directly confirming that headline salary comparisons mislead graduates about true financial outcome. Leeds shows the largest upward shift (+4), moving from lowest salary to 2nd-lowest total cost. Manchester is the standout overall performer, ranking 1st on total cost of work despite only 3rd-highest salary. Edinburgh's case is distinct from the others: its fall from 1st (disposable income) to 5th (total cost) is driven specifically by time cost, not rent or commute cost — a reminder that which cost factors are included can change the answer as much as the underlying data itself.
 
+![Salary rank versus total cost rank by city, showing London falling from 1st to last](../images/dashboard_screenshots/slope_chart_salary_vs_total_cost.png)
+
 **5. How sensitive is the ranking to the choice of commute route?**
-**5. How sensitive is the ranking to the choice of commute route?**
-Substituting a genuine, sourced alternate commute route (Wolverhampton–Birmingham New Street, £1,024/year) for the original estimated figure (Sutton Coldfield, £1,150, derived from a day-return price due to the Network West Midlands zonal fare system) changes Birmingham's disposable income by only £126 and does not change its ranking position (5th of 6, between London and Bristol). This confirms the overall ranking is not sensitive to the specific commute route or estimation method used for Birmingham — the one city where a directly-sourced annual season ticket price was unavailable through the standard calculator — giving confidence that the project's conclusions rest on solid ground even where the underlying data required judgment calls.
+Substituting a genuine, sourced alternate commute route (Wolverhampton–Birmingham New Street, £1,024/year) for the original estimated figure (Sutton Coldfield, £1,150, derived from a day-return price due to the Network West Midlands zonal fare system) changes Birmingham's disposable income by only £126 and does not change its ranking position (5th of 6, between London and Bristol). This confirms the overall ranking is not sensitive to the specific commute route or estimation method used for Birmingham, the one city where a directly-sourced annual season ticket price was unavailable through the standard calculator — giving confidence that the project's conclusions rest on solid ground even where the underlying data required judgment calls.
 
 ## Recommendations
 
 **1. Treat headline salary as a starting point, not a decision-making number.**
 London's salary advantage over Manchester (£4,800/year higher) is more than offset by higher rent and commuting costs, resulting in £16,208 disposable income for Manchester versus £11,468 for London — a gap of nearly £4,750 in the opposite direction. Any graduate comparing offers across cities should request or estimate local rent and commuting costs before treating a salary difference as decisive.
 
-**2. Weight commuting time explicitly, not just commuting cost.**
-Edinburgh and London struggle for genuinely different reasons — London's burden is commuting cost (21.86% of salary, by far the highest), Edinburgh's is commuting time (£8,294 time cost, more than double any other city). A graduate who values free time highly should discount Edinburgh's strong disposable-income position accordingly; one who is cost-sensitive but time-flexible may still find Edinburgh attractive despite its long commute.
+**2. Weigh commuting time explicitly, not just commuting cost.**
+Edinburgh and London struggle for genuinely different reasons. London's burden is commuting cost (21.86% of salary, by far the highest), Edinburgh's is commuting time (£8,294 time cost, more than double any other city). A graduate who values free time highly should discount Edinburgh's strong disposable-income position accordingly; one who is cost-sensitive but time-flexible may still find Edinburgh attractive despite its long commute.
 
 **3. Manchester and Leeds deserve more attention in graduate job searches than salary comparisons alone would suggest.**
-Both cities rank in the bottom half on raw salary (3rd and 6th respectively) but rise substantially once full costs are considered — Manchester to 1st on total cost of work, Leeds gaining four ranking positions, the largest upward shift of any city studied. Graduates and career services alike may be underweighting these cities based on salary figures alone.
+Both cities rank in the bottom half on raw salary (3rd and 6th respectively) but rise substantially once full costs are considered; Manchester to 1st on total cost of work, Leeds gaining four ranking positions, the largest upward shift of any city studied. Graduates and career services alike may be underweighting these cities based on salary figures alone.
 
 **4. For roles in regional economic policy: the salary-to-outcome gap is itself a findable, quantifiable metric.**
-This project's rank_shift calculation — the gap between a city's salary rank and its total-cost-of-work rank — offers a simple, reproducible way to identify where regional economic messaging (e.g., "move here for higher pay") may be materially misleading without malicious intent, simply because cost of living isn't part of the comparison being made.
-
-![Salary rank versus total cost rank by city, showing London falling from 1st to last](../images/dashboard_screenshots/slope_chart_salary_vs_total_cost.png)
+This project's rank_shift calculation measures the gap between a city's salary rank and its total-cost-of-work. It offers a simple, reproducible way to identify where regional economic messaging (e.g., "move here for higher pay") may be materially misleading without malicious intent, simply because cost of living isn't part of the comparison being made.
 
 **5. This methodology is a proof of concept, not a finished tool — expanding city and route coverage would strengthen it considerably.**
 With six cities and one commute route each, this analysis demonstrates the approach rather than exhaustively covering the UK graduate job market. The sensitivity check on Birmingham (Finding 5) suggests the method is reasonably robust to individual route selection, which is encouraging for extending it further.

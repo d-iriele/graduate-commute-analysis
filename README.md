@@ -1,7 +1,5 @@
 # The Cost of a Commute — Graduate Purchasing Power Across UK Cities
 
-**Status:** 🚧 In Progress — Milestone 1 of 9 (Environment & Repo Setup)
-
 ## Overview
 
 Graduate job offers are typically compared on headline salary alone, but this ignores two costs that vary enormously by location: the cost of commuting into the role, and the cost of housing near it. A graduate choosing between offers in different UK cities is effectively choosing between different disposable-income outcomes, not different salaries. This project builds a rigorous, city-by-city comparison of graduate purchasing power across six UK cities, incorporating salary, rent, commuting cost, and commuting time, to determine where a graduate's money — and time — actually goes furthest.
@@ -33,7 +31,7 @@ Full problem statement and business objectives: [`docs/00_problem_statement.md`]
 |---|---|
 | SQL (PostgreSQL) | Structuring bulk salary/rent data, calculating derived metrics (disposable income, time cost), and producing the final ranked comparison |
 | Python (pandas) | Validation of SQL calculations and any scraping/cleanup needed for manually sourced commute data |
-| Dashboard tool (TBD) | Visual, ranked comparison across cities |
+| Dashboard tool (tableau public) | Visual, ranked comparison across cities |
 
 Data flows through this pipeline: **bulk downloads (ONS/HESA) + manually curated commute data → SQL → Python validation → dashboard**. Unlike a project built entirely on one clean source file, this project deliberately combines two very different kinds of input — official bulk statistics and hand-curated, individually sourced figures — and documents that distinction explicitly (see Data section below).
 
@@ -67,7 +65,7 @@ The full raw bulk datasets are not committed to this repo (see `.gitignore`). To
 ## How to Run This Project
 
 ```bash
-git clone <this-repo-url>
+git clone <https://github.com/d-iriele/graduate-commute-analysis>
 cd graduate-commute-analysis
 python -m venv .venv
 source .venv/bin/activate
@@ -92,8 +90,18 @@ The dashboard includes an interactive filter — clicking any bar in the "Dispos
 
 ## Key Recommendations
 
-_Coming soon._
+1. Treat headline salary as a starting point, not a decision-making number — a £4,800 salary gap can be outweighed by rent and commuting costs
+2. Weigh commuting time explicitly, not just cost — London and Edinburgh struggle for genuinely different reasons
+3. Manchester and Leeds deserve more attention in graduate job searches than salary alone suggests
+4. The salary-to-outcome gap (rank_shift) is a reproducible metric worth tracking for regional economic policy
 
----
+Full reasoning and evidence for each: [`docs/findings_summary.md`](docs/findings_summary.md)
 
-*This project is being built and documented in stages as a portfolio piece; commit history reflects the analysis process from raw data to final recommendations.*
+## Skills Demonstrated
+
+- **SQL**: window functions (RANK), multi-table joins with conditional mapping logic, iterative table rebuilding to correct schema gaps
+- **Data sourcing & methodology**: combining bulk official statistics with manually curated, individually sourced data; explicit documentation of every judgment call (region-to-city mapping, route selection, estimation methods)
+- **Data quality & validation**: sensitivity testing to confirm an estimated data point didn't materially affect conclusions
+- **Data visualization**: Tableau Public dashboard including a slope chart for rank comparison, cross-filtering, and column banding
+- **Business analysis**: translating a personal question into a structured, quantified, multi-audience recommendation set
+- **Documentation**: transparent methodology notes throughout, distinguishing sourced data from estimates
