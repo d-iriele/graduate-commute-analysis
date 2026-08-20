@@ -28,7 +28,22 @@ Substituting a genuine, sourced alternate commute route (Wolverhampton–Birming
 
 ## Recommendations
 
-_To be completed once Finding 5 and Milestone 5 (data modeling) are finished — draft to include: prioritise Manchester/Leeds for genuine cost-of-living value; treat London offers with an explicit commute-cost discount when comparing; flag Edinburgh's time-cost sensitivity for anyone with a strong preference against long commutes specifically._
+**1. Treat headline salary as a starting point, not a decision-making number.**
+London's salary advantage over Manchester (£4,800/year higher) is more than offset by higher rent and commuting costs, resulting in £16,208 disposable income for Manchester versus £11,468 for London — a gap of nearly £4,750 in the opposite direction. Any graduate comparing offers across cities should request or estimate local rent and commuting costs before treating a salary difference as decisive.
+
+**2. Weight commuting time explicitly, not just commuting cost.**
+Edinburgh and London struggle for genuinely different reasons — London's burden is commuting cost (21.86% of salary, by far the highest), Edinburgh's is commuting time (£8,294 time cost, more than double any other city). A graduate who values free time highly should discount Edinburgh's strong disposable-income position accordingly; one who is cost-sensitive but time-flexible may still find Edinburgh attractive despite its long commute.
+
+**3. Manchester and Leeds deserve more attention in graduate job searches than salary comparisons alone would suggest.**
+Both cities rank in the bottom half on raw salary (3rd and 6th respectively) but rise substantially once full costs are considered — Manchester to 1st on total cost of work, Leeds gaining four ranking positions, the largest upward shift of any city studied. Graduates and career services alike may be underweighting these cities based on salary figures alone.
+
+**4. For roles in regional economic policy: the salary-to-outcome gap is itself a findable, quantifiable metric.**
+This project's rank_shift calculation — the gap between a city's salary rank and its total-cost-of-work rank — offers a simple, reproducible way to identify where regional economic messaging (e.g., "move here for higher pay") may be materially misleading without malicious intent, simply because cost of living isn't part of the comparison being made.
+
+![Salary rank versus total cost rank by city, showing London falling from 1st to last](../images/dashboard_screenshots/slope_chart_salary_vs_total_cost.png)
+
+**5. This methodology is a proof of concept, not a finished tool — expanding city and route coverage would strengthen it considerably.**
+With six cities and one commute route each, this analysis demonstrates the approach rather than exhaustively covering the UK graduate job market. The sensitivity check on Birmingham (Finding 5) suggests the method is reasonably robust to individual route selection, which is encouraging for extending it further.
 
 ## Limitations
 
